@@ -1,5 +1,5 @@
-const express = require('express');
-const checkStatusRouter = require('./routes/checkStatus');
+const express = require("express");
+const checkStatusRouter = require("./routes/checkStatus");
 
 const app = express();
 
@@ -9,6 +9,6 @@ app.use(express.json());
 //   res.sendStatus(200);
 // });
 
-app.use('/checkstatus', checkStatusRouter);
+app.use("/checkstatus", checkStatusRouter);
 
 module.exports = app;
